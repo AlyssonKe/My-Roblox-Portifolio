@@ -1,3 +1,5 @@
+"use client";
+
 interface CardProps {
   bg: string;
   title?: string| null;

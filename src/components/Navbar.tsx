@@ -1,12 +1,13 @@
 "use client";
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Importando o usePathname
+
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export default function Navbar() {
     const [menuVisible, setMenuVisible] = useState(false);
-    const pathname = usePathname(); // Usando usePathname para pegar o caminho atual
+    const pathname = usePathname();
 
     const toggleMenu = () => {
         setMenuVisible(!menuVisible);

@@ -1,11 +1,9 @@
 "use client";
 
-import Link from 'next/link';
-
 import Card from '../../../components/Card'
 import MediaViewer from '../../../components/MediaViewer'
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 export default function Games() {  
   const [viewerVisible, setViewerVisible] = useState(false);
