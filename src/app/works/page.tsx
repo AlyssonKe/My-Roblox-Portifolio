@@ -44,7 +44,7 @@ export default function Home() {
       setCurrentIndex((prevIndex) => {
         const newIndex = (prevIndex + 1) % categories.length;
         const selectedCategory = categories[newIndex];
-        handlePageChange(selectedCategory.key, newIndex);
+        handlePageChange(selectedCategory.key as "games" | "systems" | "builds" | "texturizing", newIndex);
         return newIndex;
       });
       setIsFading(false);
@@ -57,7 +57,7 @@ export default function Home() {
       setCurrentIndex((prevIndex) => {
         const newIndex = (prevIndex - 1 + categories.length) % categories.length;
         const selectedCategory = categories[newIndex];
-        handlePageChange(selectedCategory.key, newIndex);
+        handlePageChange(selectedCategory.key as "games" | "systems" | "builds" | "texturizing", newIndex);
         return newIndex;
       });
       setIsFading(false);
