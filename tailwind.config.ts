@@ -24,20 +24,20 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'menu-button': "url('/images/menu-button.svg')",
-        'duelan-main': "url('/images/duelan-main.png')",
-        '404-duelan': "url('/images/404-duelan.png')",
-        'hat-icon': "url('/images/hat-icon.png')",
-        'polygon-icon': "url('/images/polygon.png')",
+        'duelan-main': "url('/images/Duelan-Main.png')",
+        '404-duelan': "url('/images/404-Duelan.png')",
+        'hat-icon': "url('/images/Hat-Icon.png')",
+        'polygon-icon': "url('/images/Polygon.png')",
 
-        'years-decoration': "url('/images/years-decoration.png')",
-        'right-arrow': "url('/images/right-arrow.png')",
-        'down-left-arrow': "url('/images/down-left-arrow.png')",
+        'years-decoration': "url('/images/Years-Decoration.png')",
+        'right-arrow': "url('/images/Right-Arrow.png')",
+        'down-left-arrow': "url('/images/Down-Left-Arrow.png')",
 
-        'script-icon': "url('/images/script-icon.png')",
-        'hammer-icon': "url('/images/hammer-icon.png')",
-        'environment-icon': "url('/images/environment-icon.png')",
-        'gui-icon': "url('/images/gui-icon.png')",
-        'texturizer-icon': "url('/images/texturizer-icon.png')",
+        'script-icon': "url('/images/Script-Icon.png')",
+        'hammer-icon': "url('/images/Hammer-Icon.png')",
+        'environment-icon': "url('/images/Environment-Icon.png')",
+        'gui-icon': "url('/images/GUI-Icon.png')",
+        'texturizer-icon': "url('/images/Texturizer-Icon.png')",
 
         //  videos thumbnails
          'chase': "url('/videos/video-thumbnails/chase.png')",
