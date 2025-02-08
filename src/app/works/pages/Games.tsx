@@ -50,7 +50,7 @@ export default function Games() {
     },
     {
       id: "John-And-Mark",
-      image: "/images/game-thumbnails/john-and-mark.png",
+      image: "/images/game-thumbnails/John-And-Mark.png",
       link: "https://www.roblox.com/games/14108196267/The-Adventures-of-John-and-Mark",
       title: "John And Mark",
       description:
