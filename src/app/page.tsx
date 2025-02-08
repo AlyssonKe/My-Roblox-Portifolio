@@ -13,7 +13,7 @@ export default function Home() {
               Hello! My name is Alysson, I’m 20 years old, and I’m a game developer also known as Duelan. I’m passionate about creating games on the Roblox platform. Here, you can learn more about me, explore my journey as a game developer, discover my main projects, and get in touch with me. Feel free to explore; it’s an honor to have you here!
             </p>
 
-            <Link href="/" className='font-bold underline text-blue-link'>Read More -{'>'}</Link>
+            <Link href="/about" className='font-bold underline text-blue-link'>Read More -{'>'}</Link>
           </div>
 
           <div className='h-[calc(40vh)] flex flex-col items-center justify-left space-y-6 space-x-0 mt-0 sm:h-[calc(20vh)] sm:mt-12 sm:flex-row sm:space-x-12 sm:space-y-0'>
