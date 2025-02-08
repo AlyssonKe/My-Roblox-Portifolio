@@ -159,7 +159,7 @@ export default function Builds() {
                   <div
                     key={index}
                     className={
-                      `transition-opacity duration-300 ease-in-out p-1 w-full h-full sm:h-56 md:h-80 sm:duration-0 order-${index} ${isFading ? 'opacity-0 sm:opacity-100' : 'opacity-100'} ${currentIndex === index ? '' : 'hidden'} ${currentIndex === index ? '' : 'hidden sm:block' }
+                      `transition-opacity duration-300 ease-in-out p-1 w-full h-full sm:h-56 md:h-80 sm:duration-0 order-${index} ${isFading ? 'opacity-0 sm:opacity-100' : 'opacity-100'} ${currentIndex === index ? '' : 'hidden sm:block' }
                       ${index === 0 ? 'lg:w-1/2' : index === 1 ? 'sm:w-1/2' : 'sm:w-1/2 lg:w-1/3' }
                     `}
                   >

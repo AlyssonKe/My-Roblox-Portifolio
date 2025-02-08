@@ -11,21 +11,34 @@ export default function Home() {
   const STORAGE_KEY = "activePage";
   const INDEX_STORAGE_KEY = "currentIndex";
 
-  const [activePage, setActivePage] = useState<"games" | "systems" | "builds" | "texturizing" >(
-    () => (localStorage.getItem(STORAGE_KEY) as "games" | "systems" | "builds" | "texturizing") || "games"
-  );
+  // Inicializa sem acessar localStorage diretamente
+  const [activePage, setActivePage] = useState<"games" | "systems" | "builds" | "texturizing">("games");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  const [currentIndex, setCurrentIndex] = useState(
-    () => Number(localStorage.getItem(INDEX_STORAGE_KEY)) || 0
-  );
+  useEffect(() => {
+    const storedPage = localStorage.getItem(STORAGE_KEY) as "games" | "systems" | "builds" | "texturizing";
+    const storedIndex = Number(localStorage.getItem(INDEX_STORAGE_KEY));
+
+    if (storedPage) setActivePage(storedPage);
+    if (!isNaN(storedIndex)) setCurrentIndex(storedIndex);
+
+    setIsLoaded(true);
+  }, []);
 
   const [hasInteracted, setHasInteracted] = useState(false);
 
   const handlePageChange = (page: "games" | "systems" | "builds" | "texturizing", index: number) => {
     setActivePage(page);
-    localStorage.setItem(STORAGE_KEY, page);
-    localStorage.setItem(INDEX_STORAGE_KEY, String(index)); // Salva o índice no localStorage
+    setCurrentIndex(index);
     setHasInteracted(true);
+
+    try {
+      localStorage.setItem(STORAGE_KEY, page);
+      localStorage.setItem(INDEX_STORAGE_KEY, String(index));
+    } catch (error) {
+      console.error("Erro ao acessar localStorage:", error);
+    }
   };
 
   const categories = [
@@ -41,27 +54,27 @@ export default function Home() {
   const nextCategory = () => {
     setIsFading(true);
     setTimeout(() => {
+      setIsFading(false);
       setCurrentIndex((prevIndex) => {
         const newIndex = (prevIndex + 1) % categories.length;
         const selectedCategory = categories[newIndex];
         handlePageChange(selectedCategory.key as "games" | "systems" | "builds" | "texturizing", newIndex);
         return newIndex;
       });
-      setIsFading(false);
-    }, 300);
+    }, 200);
   };
   
   const prevCategory = () => {
     setIsFading(true);
     setTimeout(() => {
+      setIsFading(false);
       setCurrentIndex((prevIndex) => {
         const newIndex = (prevIndex - 1 + categories.length) % categories.length;
         const selectedCategory = categories[newIndex];
         handlePageChange(selectedCategory.key as "games" | "systems" | "builds" | "texturizing", newIndex);
         return newIndex;
       });
-      setIsFading(false);
-    }, 300);
+    }, 200);
   };
 
   return (
@@ -78,15 +91,16 @@ export default function Home() {
             </li>
 
             {categories.map((category, index) => (
-              <li key={index} className={`group relative flex-1 transition-opacity duration-300 ease-in-out 
+              <li key={index} className={`group relative flex-1 transition-all duration-300 ease-in-out 
                 ${isFading ? 'opacity-0 sm:opacity-100' : 'opacity-100'}
                 ${currentIndex === index ? '' : 'hidden md:block'}
               `}>
                 <button
                   onClick={() => handlePageChange(category.key as any, index)}
                   className={`h-14 text-primary flex items-center justify-center rounded-xl w-full text-xl font-semibold uppercase px-2 md:h-10 lg:text-3xl lg:h-14
-                  ${hasInteracted ? "duration-200" : ""}
-                  ${activePage === category.key ? "bg-primary-blue" : "bg-secondary group-hover:bg-secondary-gray group-hover:text-secondary"}`}
+                    ${hasInteracted ? "duration-200" : ""}
+                    ${activePage === category.key ? "bg-primary-blue" : "bg-secondary group-hover:bg-secondary-gray group-hover:text-secondary"}
+                  `}
                 >
                   {category.label}
                 </button>

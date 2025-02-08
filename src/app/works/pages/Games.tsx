@@ -118,7 +118,7 @@ export default function Games() {
                 {cards.map((card, index) => (
                   <div
                     key={index}
-                    className={`transition-opacity duration-300 ease-in-out p-1 w-full h-full sm:w-1/2 sm:h-56 md:h-80 lg:w-1/3 sm:duration-0 ${isFading ? 'opacity-0 sm:opacity-100' : 'opacity-100'} ${currentIndex === index ? '' : 'hidden'} ${currentIndex === index ? '' : 'hidden sm:block' }`}
+                    className={`transition-opacity duration-300 ease-in-out p-1 w-full h-full sm:w-1/2 sm:h-56 md:h-80 lg:w-1/3 sm:duration-0 ${isFading ? 'opacity-0 sm:opacity-100' : 'opacity-100'} ${currentIndex === index ? '' : 'hidden sm:block' }`}
                   >
                     <Card
                       bg={card.image}
