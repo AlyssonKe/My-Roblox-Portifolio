@@ -8,13 +8,13 @@ import Footer from '../components/Footer'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Duelan's Portifolio",
+  title: "Duelan's Portfolio",
   description: "My Roblox portfolio and a little about me as a person.",
-  keywords: "Portifolio, Programming, Roblox, Dev, Game Dev, Scripter, Modeling, Building",
+  keywords: "Portfolio, Programming, Roblox, Dev, Game Dev, Scripter, Modeling, Building",
   creator: "Duelan",
 
   openGraph: {
-    title: "Duelan's Portifolio",
+    title: "Duelan's Portfolio",
     description: "My Roblox portfolio and a little about me as a person",
     url: "https://duelan.dev",
     // images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     //     url: "https://duelan.dev/image.jpg",
     //     width: 800,
     //     height: 600,
-    //     alt: "Portifolio Image",
+    //     alt: "Portfolio Image",
     //   },
     // ],
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   // Twitter Card Tags
   twitter: {
     card: "summary_large_image",
-    title: "Duelan's Portifolio",
+    title: "Duelan's Portfolio",
     description: "My Roblox portfolio and a little about me as a person.",
     // images: ["https://duelan.dev/image-twitter.jpg"],
   },

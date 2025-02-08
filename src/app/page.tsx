@@ -6,7 +6,7 @@ export default function Home() {
       <div className="relative h-fit bg-primary px-6 sm:h-[calc(100vh)] min-h-[720px] sm:px-6 md:px-20 xl:px-40 -mt-20">
         <div className="relative mt-0 z-10 sm:-mt-0 sm:top-1/2 sm:-translate-y-1/2 sm:translate-y-none">
           <div className="h-[calc(100vh-80px)] w-full flex flex-col items-center justify-center text-center sm:w-2/3 sm:h-auto sm:text-left sm:block">
-            <h1 className="text-secondary uppercase text-6xl font-bold">Duelan's Portifolio</h1>
+            <h1 className="text-secondary uppercase text-6xl font-bold">Duelan's Portfolio</h1>
             <h3 className="text-gray text-lg font-light">Scripter/Programmer, Builder, Game Developer</h3>
 
             <p className="text-secondary w-full text-base my-4 sm:w-10/12">
