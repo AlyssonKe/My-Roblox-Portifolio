@@ -11,8 +11,8 @@ export default function Home() {
   const STORAGE_KEY = "activePage";
   const INDEX_STORAGE_KEY = "currentIndex";
 
-  const [activePage, setActivePage] = useState<"games" | "systems" | "builds" | "texturizing" | "gui">(
-    () => (localStorage.getItem(STORAGE_KEY) as "games" | "systems" | "builds" | "texturizing" | "gui") || "games"
+  const [activePage, setActivePage] = useState<"games" | "systems" | "builds" | "texturizing" >(
+    () => (localStorage.getItem(STORAGE_KEY) as "games" | "systems" | "builds" | "texturizing") || "games"
   );
 
   const [currentIndex, setCurrentIndex] = useState(
