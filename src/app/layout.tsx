@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     title: "Duelan's Portfolio",
     description: "My Roblox portfolio and a little about me as a person",
     url: "https://duelan.dev",
-    // images: [
-    //   {
-    //     url: "https://duelan.dev/image.jpg",
-    //     width: 800,
-    //     height: 600,
-    //     alt: "Portfolio Image",
-    //   },
-    // ],
+    images: [
+      {
+        url: "/images/Card-BG.png",
+        width: 1280,
+        height: 630,
+        alt: "Portfolio Image",
+      },
+    ],
     type: "website",
   },
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Duelan's Portfolio",
     description: "My Roblox portfolio and a little about me as a person.",
-    // images: ["https://duelan.dev/image-twitter.jpg"],
+    images: ["/images/Card-BG.png"],
   },
 };
 
