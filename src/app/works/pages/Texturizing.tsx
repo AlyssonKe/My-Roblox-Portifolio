@@ -105,7 +105,7 @@ export default function Builds() {
         <div className="flex-row z-10 mt-0 sm:-mt-0 space-y-32 pt-12 sm:pt-24">
           <div className="w-full flex flex-col items-start text-center sm:h-auto sm:text-left">
             <div className='w-full h-full lg:w-1/2 px-6 sm:px-0'>
-              <h1 className="text-secondary uppercase text-6xl font-bold">Texturizing</h1>
+              <h1 className="text-secondary uppercase text-6xl font-bold">Texture</h1>
               <p className="text-secondary w-full text-base my-4">
                 It's the area I have the least expertise in and practice the least, but when I take the time to texture an asset, I truly love it. Bringing color to something and seeing it come to life is incredibly rewarding for me. Below are some assets I have textured.
               </p>
@@ -116,7 +116,7 @@ export default function Builds() {
                 {texturizing.map((card, index) => (
                   <div
                     key={index*2}
-                    className="p-1 w-full h-52 lg:w-1/3 sm:h-80 lg:h-80 2xl:h-96 min-[300px]:w-1/2 block"
+                    className="p-1 w-full h-52 lg:w-1/3 sm:h-80 lg:h-80 2xl:h-96 min-[400px]:w-1/2 block"
                   >
                     <Card
                       bg={card.image}

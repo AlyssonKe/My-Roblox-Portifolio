@@ -77,26 +77,6 @@ export default function Games() {
     }
   }
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFading, setIsFading] = useState(false);
-  const cardsRef = useRef(null);
-
-  const nextCard = () => {
-    setIsFading(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-      setIsFading(false);
-    }, 300);
-  };
-  
-  const prevCard = () => {
-    setIsFading(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
-      setIsFading(false);
-    }, 300);
-  };
-
   return (
     <div>
       <MediaViewer data={viewerData} onClose={toggleViewer} viewerVisible={viewerVisible} />
@@ -111,14 +91,12 @@ export default function Games() {
               </p>
             </div>
 
-            <div className="w-full h-64 sm:h-fit flex flex-wrap justify-start min-[540px]:h-80">
-              <button className='block w-[10%] h-full text-secondary text-4xl font-base sm:hidden' onClick={prevCard}>&lt;</button> {/* Previous */}
-
-              <div ref={cardsRef} className='w-[80%] h-full flex flex-wrap justify-start overflow-hidden sm:w-full'>
+            <div className="w-full h-fit px-[10%] flex flex-wrap justify-start sm:px-[0%]">
+              <div className='w-full h-full flex flex-wrap justify-start'>
                 {cards.map((card, index) => (
                   <div
                     key={index}
-                    className={`transition-opacity duration-300 ease-in-out p-1 w-full h-full sm:w-1/2 sm:h-56 md:h-80 lg:w-1/3 sm:duration-0 ${isFading ? 'opacity-0 sm:opacity-100' : 'opacity-100'} ${currentIndex === index ? '' : 'hidden sm:block' }`}
+                    className="p-1 w-full h-80 sm:w-1/2 md:h-80 lg:w-1/3 sm:duration-0"
                   >
                     <Card
                       bg={card.image}
@@ -130,8 +108,6 @@ export default function Games() {
                   </div>
                 ))}
               </div>
-
-              <button className='block w-[10%] h-full text-secondary text-4xl font-base sm:hidden' onClick={nextCard}>&gt;</button> {/* Next */}
             </div>
           </div>
         </div>

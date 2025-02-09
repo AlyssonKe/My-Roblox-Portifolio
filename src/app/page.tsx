@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <div className="relative h-fit bg-primary px-6 sm:h-[calc(100vh)] min-h-[720px] sm:px-6 md:px-20 xl:px-40 -mt-20">
         <div className="relative mt-0 z-10 sm:-mt-0 sm:top-1/2 sm:-translate-y-1/2 sm:translate-y-none">
-          <div className="h-[calc(100vh-80px)] w-full flex flex-col items-center justify-center text-center sm:w-2/3 sm:h-auto sm:text-left sm:block">
+          <div className="h-[calc(100vh-80px)] min-h-[720px] sm:min-h-0 w-full flex flex-col items-center justify-center text-center sm:w-2/3 sm:h-auto sm:text-left sm:block">
             <h1 className="text-secondary uppercase text-6xl font-bold">Duelan's Portfolio</h1>
             <h3 className="text-gray text-lg font-light">Scripter/Programmer, Builder, Game Developer</h3>
 
@@ -16,7 +16,7 @@ export default function Home() {
             <Link href="/about" className='font-bold underline text-blue-link'>Read More -{'>'}</Link>
           </div>
 
-          <div className='h-[calc(40vh)] flex flex-col items-center justify-left space-y-6 space-x-0 mt-0 sm:h-[calc(20vh)] sm:mt-12 sm:flex-row sm:space-x-12 sm:space-y-0'>
+          <div className='h-[calc(40vh)] flex flex-col items-center justify-left space-y-6 space-x-0 mt-0 mb-24 sm:h-[calc(20vh)] sm:mt-12 sm:mb-0 sm:flex-row sm:space-x-12 sm:space-y-0'>
             <div className='w-fit flex flex-col items-center'>
               <h1 className='text-primary-blue text-8xl font-black'>6</h1>
               <div className='absolute w-32 h-32 -mt-4 bg-years-decoration bg-cover'></div>

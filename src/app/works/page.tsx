@@ -81,7 +81,7 @@ export default function Home() {
     <main>
       <div className="relative h-fit bg-primary min-h-[720px] -mt-20 pt-36 sm:pt-44 pb-24">
         <div className='w-full sm:px-6 md:px-20 xl:px-40 flex flex-wrap justify-center items-center'>
-          <p className="text-secondary w-full text-base text-center mb-8">
+          <p className="text-secondary w-full text-base text-center mb-8 px-6 sm:px-0">
             I am a flexible developer who enjoys exploring different areas. While using Roblox Studio, I learned much more than just programming, which is my main expertise. This allowed me to create diverse projects and grow along the way.
           </p>
 
