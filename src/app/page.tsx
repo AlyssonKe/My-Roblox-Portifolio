@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <div className='w-full flex flex-col items-center sm:w-1/6'>
               <div className='w-24 h-24 bg-gui-icon bg-cover'></div>
-              <h3 className='w-full h-12 text-center text-base font-semibold'>Basic<br/>GUI/UI</h3>
+              <h3 className='w-full h-12 text-center text-base font-semibold'>Basic<br/>Game UI/UX</h3>
             </div>
             <div className='w-full flex flex-col items-center sm:w-1/6'>
               <div className='w-16 h-16 bg-texturizer-icon bg-cover md:w-24 md:h-24'></div>

@@ -4,17 +4,43 @@ export default function About() {
       <div className="h-fit bg-primary px-6 sm:px-12 md:px-20 xl:px-40">
         <div className="flex-row z-10 mt-0 sm:-mt-0 space-y-24 py-24 sm:space-y-32">
           <div className="w-full flex flex-col items-start text-center sm:h-auto sm:text-left">
-            <div className='w-full h-full lg:w-1/2'>
-              <h1 className="text-secondary uppercase text-6xl font-bold">About Me</h1>
-              <p className="text-secondary w-full text-base my-4">
-                Hello! My name is Alysson. I am 20 years old, and I am a game developer known as Duelan. Currently, I live in Brazil<span className='italic font-bold'>(GMT -3)</span>. I am fluent in Portuguese and have intermediate English skills. I am passionate about creating games on Roblox. Beyond programming, I love exploring different aspects of game development, constantly seeking to learn something new.
-                When I am not working on games, I like to spend time with my friends and explore new games. This free time not only helps me relax, but also serves as inspiration for my projects.
+            <div className='w-full h-full text-secondary text-base'>
+              <h1 className="uppercase text-6xl font-bold mb-4">About Me</h1>
+              <p className="w-full" >
+                Hi! I'm Alysson, also known as Duelan. I'm a 20-year-old game developer from Brazil <span className='italic font-bold'>(GMT -3)</span>. I'm fluent in Portuguese and have an intermediate level of English. I'm passionate about creating games on Roblox, and I enjoy exploring various aspects of game development while constantly learning new things. When I'm not working on games, I love spending time with my friends and exploring new games, which not only helps me relax but also inspires my projects.
+              </p>
+              <br/>
+              <p>
+                Throughout my journey with Roblox Studio, I've acquired a wide range of skills and created several games, many of which have been valuable learning experiences, even if they were never released. In 2019, I launched <a href="https://www.roblox.com/games/4237861040/Treacherous-Tower" target="_blank" rel="noopener noreferrer" className="text-link">Treacherous Tower</a>, a game where players climb a tower filled with obstacles that change every 60 seconds, using power-ups to either help or hinder others. The game reached over 650 million visits, marking a major milestone in my development career and motivating me to keep improving as a developer.
+              </p>
+              <br/>
+              <p>
+                  Other important projects I've worked on include <a href="https://www.roblox.com/games/14108196267/The-Adventures-of-John-and-Mark" target="_blank" rel="noopener noreferrer" className="text-link">The Adventures of John and Mark</a> and <a href="https://www.roblox.com/games/16497788573/Pink-Palace-Tycoon" target="_blank" rel="noopener noreferrer" className="text-link">Pink Palace Tycoon</a>.
+              </p>
+              <br/>
+              <p>
+                Currently, in 2025, at 20 years old, I'm in my second semester of a Computer Science degree. While my studies take up part of my day, my passion for programming and Roblox game development remains strong.
+              </p>
+              <br/>
+              <h3 className="font-bold text-lg">Key experiences:</h3>
+              <ul className="pl-8 text-left sm:text-left font-medium">
+                <li className="list-disc">6+ years of experience with Luau</li>
+                <li className="list-disc">Familiar with open-source modules such as Trove, Signal, ProfileService, Promise, ByteNet, and more</li>
+                <li className="list-disc">Game Design</li>
+                <li className="list-disc">Intermediate experience in 3D, including environment creation, Blender, and Substance Painter</li>
+                <li className="list-disc">UI/UX interface manipulation</li>
+                <li className="list-disc">Problem-solving and debugging</li>
+                <li className="list-disc">Focus on code optimization and organization</li>
+              </ul>
+              <br/>
+              <p>
+                I'm eager to expand my horizons in the game development industry. Feel free to reach out—who knows, we might create something amazing together!
               </p>
 
-              <div className='absolute right-1/2 hidden mx-8 w-60 h-60 -mt-4 rotate-6 bg-right-arrow bg-cover lg:block'></div>
+              {/* <div className='absolute right-1/2 hidden mx-8 w-60 h-60 -mt-4 rotate-6 bg-right-arrow bg-cover lg:block'></div> */}
             </div>
           </div>
-
+{/* 
           <div className="w-full flex flex-col items-end text-center sm:h-auto sm:text-left">
             <div className='w-full h-full lg:w-1/2'>
               <h1 className="text-secondary uppercase text-6xl font-bold">My Journey</h1>
@@ -45,7 +71,7 @@ export default function About() {
                 The game is still in development, and I hope to release it soon. For updates, follow me on my official social media <a href="https://x.com/Duelan_BR" target="_blank" rel="noopener noreferrer" className="text-link">X/Twitter</a>.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>
