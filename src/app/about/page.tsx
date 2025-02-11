@@ -19,7 +19,7 @@ export default function About() {
               </p>
               <br/>
               <p>
-                Currently, in 2025, at 20 years old, I'm in my second semester of a Computer Science degree. While my studies take up part of my day, my passion for programming and Roblox game development remains strong.
+                Currently, in 2025, I'm in my second semester of a Computer Science degree. While my studies take up part of my day, my passion for programming and Roblox game development remains strong.
               </p>
               <br/>
               <h3 className="font-bold text-lg">Key experiences:</h3>
