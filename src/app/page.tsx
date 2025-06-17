@@ -1,6 +1,12 @@
+"use client";
+
 import Link from 'next/link';
+import { useEffect, useState } from "react";
+import { useVisits } from "@/context/VisitsContext";
 
 export default function Home() {
+  const { visits } = useVisits();
+
   return (
     <main>
       <div className="relative h-fit bg-primary px-6 sm:h-[calc(100vh)] min-h-[720px] sm:px-6 md:px-20 xl:px-40 -mt-20">
@@ -23,10 +29,12 @@ export default function Home() {
               <h3 className='w-24 text-center text-base font-semibold'>Years Of Experience</h3>
             </div>
 
-            <div className='w-fit flex flex-col items-center'>
-              <h1 className='text-primary-blue text-8xl font-black'>+660M</h1>
-              <h3 className='w-24 text-center text-base font-semibold'>Game Visits</h3>
-            </div>
+            {visits && (
+              <div className='w-fit flex flex-col items-center'>
+                <h1 className='text-primary-blue text-8xl font-black'>{visits || ""}</h1>
+                <h3 className='w-24 text-center text-base font-semibold'>Game Visits</h3>
+              </div>
+            )}
           </div>
         </div>
 
