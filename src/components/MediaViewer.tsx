@@ -24,12 +24,30 @@ const MediaViewer = ({
   viewerVisible: boolean;
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
   const [thumbnail, setThumbnail] = useState(data?.image);
 
+  const isYouTubeLink = (url: string) => {
+    return /(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(url);
+  };
+
+  const getYouTubeEmbedUrl = (url: string) => {
+    const videoIdMatch = url.match(
+      /(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/
+    );
+    return videoIdMatch ? `https://www.youtube.com/embed/${videoIdMatch[1]}` : null;
+  };
+
   const handleClose = () => {
-    if (videoRef && videoRef.current) {
-        videoRef.current.pause();
+    if (videoRef.current) {
+      videoRef.current.pause();
     }
+
+    if (iframeRef.current) {
+      const current = iframeRef.current;
+      current.src = current.src;
+    }
+
     setThumbnail("");
     onClose();
   };
@@ -74,25 +92,43 @@ const MediaViewer = ({
           {data ? (
             <>
               {data.video ? (
-                <video
-                  ref={videoRef}
-                  key={data.video}
-                  controls
-                  controlsList="nodownload"
-                  disablePictureInPicture
-                  className={`h-auto object-cover rounded-md shadow-image-view ${
-                    data.isSmall
-                      ? "h-fit w-fit"
-                      : `h-auto w-[90%] ${
-                          data.isBig
-                            ? "max-w-[1280px] sm:w-[90%] md:w-[80%]"
-                            : "max-w-[700px] sm:w-[80%] md:w-[60%]"
-                        }`
-                  }`}
-                >
-                  <source src={data.video} type="video/mp4" />
-                  Seu navegador não suporta vídeos.
-                </video>
+                isYouTubeLink(data.video) ? (
+                  <iframe
+                    ref={iframeRef}
+                    src={getYouTubeEmbedUrl(data.video) ?? ""}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className={`rounded-md shadow-image-view aspect-video ${
+                      data.isSmall
+                        ? "h-fit w-fit"
+                        : `w-[90%] ${
+                            data.isBig
+                              ? "max-w-[1280px] sm:w-[90%] md:w-[80%]"
+                              : "max-w-[700px] sm:w-[80%] md:w-[60%]"
+                          }`
+                    }`}
+                  />
+                ) : (
+                  <video
+                    ref={videoRef}
+                    key={data.video}
+                    controls
+                    controlsList="nodownload"
+                    disablePictureInPicture
+                    className={`h-auto object-cover rounded-md shadow-image-view ${
+                      data.isSmall
+                        ? "h-fit w-fit"
+                        : `h-auto w-[90%] ${
+                            data.isBig
+                              ? "max-w-[1280px] sm:w-[90%] md:w-[80%]"
+                              : "max-w-[700px] sm:w-[80%] md:w-[60%]"
+                          }`
+                    }`}
+                  >
+                    <source src={data.video} type="video/mp4" />
+                    Seu navegador não suporta vídeos.
+                  </video>
+                )
               ) : thumbnail !== "" && thumbnail !== null ?  (
                 <img
                   src={thumbnail}
