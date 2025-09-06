@@ -29,6 +29,8 @@ const config: Config = {
         'hat-icon': "url('/images/Hat-Icon.png')",
         'polygon-icon': "url('/images/Polygon.png')",
 
+        'duelan-404': "url('/images/Duelan-404.png')",
+
         'years-decoration': "url('/images/Years-Decoration.png')",
         'right-arrow': "url('/images/Right-Arrow.png')",
         'down-left-arrow': "url('/images/Down-Left-Arrow.png')",

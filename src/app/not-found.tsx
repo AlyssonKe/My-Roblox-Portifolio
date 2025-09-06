@@ -7,7 +7,7 @@ export default function Error() {
     <main>
       <div className="w-full h-screen -mt-20 z-50">
         <div className="absolute right-0 left-0 mx-auto top-1/2 -translate-y-1/2">
-          <img src="/images/duelan.png" className="mx-auto h-96 mb-8" alt="404" />
+          <div className="bg-duelan-404 bg-no-repeat bg-contain bg-center -mx-auto h-96 mb-8" />
           <h1 className="uppercase text-secondary font-black text-6xl pb-2 text-center">404</h1>
           <h2 className="text-gray font-semibold text-2xl text-center">OOPS! Page Not Found!</h2>
 
