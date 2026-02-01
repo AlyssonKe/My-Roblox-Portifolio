@@ -6,7 +6,7 @@ import { games } from "@/data/games";
 
 import { useRef, useState } from 'react';
 
-export default function Games() {  
+export default function Games() {
   const [viewerVisible, setViewerVisible] = useState(false);
   const [viewerData, setViewerData] = useState<{
     id: string;
@@ -20,14 +20,14 @@ export default function Games() {
     isBig: boolean | null;
     isSmall: boolean | null;
   } | null>(null);
-  
+
   const toggleViewer = () => {
     setViewerVisible(!viewerVisible);
   };
 
   function changeViewer(id: string) {
     const selected = games.find((card) => card.id === id);
-  
+
     if (selected) {
       setViewerData({
         id: selected.id,
@@ -40,7 +40,7 @@ export default function Games() {
         isBig: null,
         isSmall: null,
       });
-      
+
       setViewerVisible(true);
     }
   }
@@ -58,10 +58,20 @@ export default function Games() {
             <div className='w-full h-full lg:w-1/2 px-6 sm:px-0'>
               <h1 className="text-secondary uppercase text-6xl font-bold">Contribuitions</h1>
               <p className="text-secondary w-full text-base my-4">
-                I'm currently working on <a href="https://www.roblox.com/games/13772394625/Blade-Ball" target="_blank" rel="noopener noreferrer" className="text-link">Blade Ball</a>, and it's been an incredibly rewarding experience. Beyond expanding my professional horizons, I have the honor of working alongside an amazing team.
-                <br/>
-                In addition to <a href="https://www.roblox.com/games/13772394625/Blade-Ball" target="_blank" rel="noopener noreferrer" className="text-link">Blade Ball</a>, I've also contributed to several other projects throughout my journey. Below are some of the games I've had the opportunity to work on:
+                I'm currently working on{" "}
+                <a
+                  href="https://www.roblox.com/games/131623223084840/Escape-Tsunami-For-Brainrots"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-link"
+                >
+                  Escape Tsunami For Brainrots
+                </a>
+                , my current role and the largest project I've worked on so far. It's been a rewarding experience, allowing me to work on a large-scale game alongside an amazing team.
+                <br />
+                I've also contributed to several other projects throughout my journey, listed below.
               </p>
+
             </div>
 
             <div className="w-full h-fit px-[10%] flex flex-wrap justify-start sm:px-[0%]">

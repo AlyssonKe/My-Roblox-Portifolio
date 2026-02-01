@@ -1,6 +1,16 @@
 // src/data/games.ts
 export const games = [
   {
+    id: "ETFB",
+    universeId: 9363735110,
+    contribuition: true,
+    image: "/images/game-thumbnails/ETFB.png",
+    link: "https://www.roblox.com/games/131623223084840/Escape-Tsunami-For-Brainrots",
+    title: "Escape Tsunami For Brainrots",
+    description:
+      "This is my current job and the largest project I have worked on so far. Escape Tsunami For Brainrots is a game where players collect brainrots and survive endless waves of tsunamis. As they progress through zones, items become rarer and the challenge increases, demanding strategy and quick decision-making. The game reached a peak of <b>5.2 MILLION concurrent players</b> and has surpassed <b>2 BILLION visits</b>.",
+  },
+  {
     id: "BB",
     universeId: 4777817887,
     contribuition: true,
@@ -8,7 +18,7 @@ export const games = [
     link: "https://www.roblox.com/games/13772394625/Blade-Ball",
     title: "Blade Ball",
     description:
-      "I'm currently working on Blade Ball, a multiplayer PvP game where players compete to see who's the best at deflecting a ball using a sword. The game has already surpassed <b>5 BILLION visits</b> and consistently has over <b>20,000 concurrent players</b> every day!",
+      "I worked on Blade Ball for 8 months, an incredible period during which I gained a lot of technical and professional experience, as well as the opportunity to work alongside an amazing team. Blade Ball is a multiplayer PvP game where players compete to see who's the best at deflecting a ball using a sword. The game has already surpassed <b>5 BILLION visits</b> and consistently has over <b>20,000 concurrent players</b> every day!",
   },
   {
     id: "FISCH",
