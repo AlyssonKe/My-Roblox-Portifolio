@@ -1,6 +1,16 @@
 // src/data/games.ts
 export const games = [
   {
+    id: "Knockout",
+    universeId: 9384605736,
+    contribuition: true,
+    image: "/images/game-thumbnails/Knockout.png",
+    link: "https://www.roblox.com/games/136764190843219/Knockout",
+    title: "Knockout",
+    description:
+      "This is my current job and one of the most fun projects I've worked on. Knockout is a penguin battle game where players try to knock each other off the ice without seeing their opponents aim, making every round unpredictable. The game has surpassed <b>700 MILLION visits</b>, and I've contributed by refactoring core systems, especially improving the underlying UI code and structure.",
+  },
+  {
     id: "ETFB",
     universeId: 9363735110,
     contribuition: true,
@@ -8,7 +18,7 @@ export const games = [
     link: "https://www.roblox.com/games/131623223084840/Escape-Tsunami-For-Brainrots",
     title: "Escape Tsunami For Brainrots",
     description:
-      "This is my current job and the largest project I have worked on so far. Escape Tsunami For Brainrots is a game where players collect brainrots and survive endless waves of tsunamis. As they progress through zones, items become rarer and the challenge increases, demanding strategy and quick decision-making. The game reached a peak of <b>5.2 MILLION concurrent players</b> and has surpassed <b>2 BILLION visits</b>.",
+      "The largest project I have worked on so far. Escape Tsunami For Brainrots is a game where players collect brainrots and survive endless waves of tsunamis. As they progress through zones, items become rarer and the challenge increases, demanding strategy and quick decision-making. The game reached a peak of <b>5.2 MILLION concurrent players</b> and has surpassed <b>4 BILLION visits</b>.",
   },
   {
     id: "BB",

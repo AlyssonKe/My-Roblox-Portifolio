@@ -52,11 +52,11 @@ const Card: React.FC<CardProps> = ({ bg, title, changeViewer, viewerId, cardType
           setGameTitle(gameTitleCache[universeId]);
         } else {
           try {
-            const res = await fetch(`/api/gameInfo?id=${universeId}`);
+            const res = await fetch(`/api/game-info?id=${universeId}`);
             const data = await res.json();
-            if (data?.name) {
-              gameTitleCache[universeId] = data.name;
-              setGameTitle(data.name);
+            if (data?.[0]?.name) {
+              gameTitleCache[universeId] = data?.[0]?.name;
+              setGameTitle(data?.[0]?.name);
             } else {
               setGameTitle(title);
             }

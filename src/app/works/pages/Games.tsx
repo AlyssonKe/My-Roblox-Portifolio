@@ -60,14 +60,14 @@ export default function Games() {
               <p className="text-secondary w-full text-base my-4">
                 I'm currently working on{" "}
                 <a
-                  href="https://www.roblox.com/games/131623223084840/Escape-Tsunami-For-Brainrots"
+                  href="https://www.roblox.com/games/136764190843219/Knockout"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-link"
                 >
-                  Escape Tsunami For Brainrots
+                  Knockout
                 </a>
-                , my current role and the largest project I've worked on so far. It's been a rewarding experience, allowing me to work on a large-scale game alongside an amazing team.
+                , my current role and one of the most fun projects I've worked on so far. It's been a great experience contributing to a large-scale game, where I've focused on refactoring core systems, especially improving the structure and maintainability of UI code.
                 <br />
                 I've also contributed to several other projects throughout my journey, listed below.
               </p>

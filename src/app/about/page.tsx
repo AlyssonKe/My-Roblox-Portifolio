@@ -7,7 +7,7 @@ export default function About() {
             <div className='w-full h-full text-secondary text-base'>
               <h1 className="uppercase text-6xl font-bold mb-4">About Me</h1>
               <p className="w-full" >
-                Hi! I'm Alysson, also known as Duelan. I'm a 20-year-old game developer from Brazil <span className='italic font-bold'>(GMT -3)</span>. I'm fluent in Portuguese and have an intermediate level of English. I'm passionate about creating games on Roblox, and I enjoy exploring various aspects of game development while constantly learning new things. When I'm not working on games, I love spending time with my friends and exploring new games, which not only helps me relax but also inspires my projects.
+                Hi! I'm Alysson, also known as Duelan. I'm a 21-year-old game developer from Brazil <span className='italic font-bold'>(GMT -3)</span>. I'm fluent in Portuguese and have an intermediate level of English. I'm passionate about creating games on Roblox, and I enjoy exploring various aspects of game development while constantly learning new things. When I'm not working on games, I love spending time with my friends and exploring new games, which not only helps me relax but also inspires my projects.
               </p>
               <br/>
               <p>
@@ -19,7 +19,7 @@ export default function About() {
               </p>
               <br/>
               <p>
-                Currently, in 2025, I'm in my second semester of a Computer Science degree. While my studies take up part of my day, my passion for programming and Roblox game development remains strong.
+                Currently, in 2026, I'm in my fourth semester of a Computer Science degree. While my studies take up part of my day, my passion for programming and Roblox game development remains strong.
               </p>
               <br/>
               <h3 className="font-bold text-lg">Key experiences:</h3>

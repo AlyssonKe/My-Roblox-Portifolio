@@ -16,7 +16,7 @@ export default function Home() {
             <h3 className="text-gray text-lg font-light">Scripter/Programmer, Builder, Game Developer</h3>
 
             <p className="text-secondary w-full text-base my-4 sm:w-10/12">
-              Hello! My name is Alysson, I’m 20 years old, and I’m a game developer also known as Duelan. I’m passionate about creating games on the Roblox platform. Here, you can learn more about me, explore my journey as a game developer, discover my main projects, and get in touch with me. Feel free to explore; it’s an honor to have you here!
+              Hello! My name is Alysson, I'm 21 years old, and I'm a game developer also known as Duelan. I'm passionate about creating games on the Roblox platform. Here, you can learn more about me, explore my journey as a game developer, discover my main projects, and get in touch with me. Feel free to explore; it's an honor to have you here!
             </p>
 
             <Link href="/about" className='font-bold underline text-blue-link'>Read More -{'>'}</Link>
