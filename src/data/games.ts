@@ -8,7 +8,7 @@ export const games = [
     link: "https://www.roblox.com/games/128784467030899/Merge-a-Nuke",
     title: "Merge a Nuke!",
     description:
-      "Merge a Nuke! is my current project. In the game, players merge nukes together to create stronger versions, attack other players' bases, and continuously grow their power through progression. Working on this project has allowed me to contribute to core gameplay systems and help shape the overall player experience.",
+      "Merge a Nuke! is the current project I'm working on. In the game, players merge nukes together to create stronger versions, attack other players' bases, and continuously grow their power through progression. Working on this project has allowed me to contribute to core gameplay systems and help shape the overall player experience.",
   },
   {
     id: "Knockout",
