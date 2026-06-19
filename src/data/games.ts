@@ -1,6 +1,16 @@
 // src/data/games.ts
 export const games = [
   {
+    id: "MAN",
+    universeId: 10199301628,
+    contribuition: true,
+    image: "/images/game-thumbnails/MAK.png",
+    link: "https://www.roblox.com/games/128784467030899/Merge-a-Nuke",
+    title: "Merge a Nuke!",
+    description:
+      "Merge a Nuke! is my current project. In the game, players merge nukes together to create stronger versions, attack other players' bases, and continuously grow their power through progression. Working on this project has allowed me to contribute to core gameplay systems and help shape the overall player experience.",
+  },
+  {
     id: "Knockout",
     universeId: 9384605736,
     contribuition: true,
@@ -8,7 +18,7 @@ export const games = [
     link: "https://www.roblox.com/games/136764190843219/Knockout",
     title: "Knockout",
     description:
-      "This is my current job and one of the most fun projects I've worked on. Knockout is a penguin battle game where players try to knock each other off the ice without seeing their opponents aim, making every round unpredictable. The game has surpassed <b>700 MILLION visits</b>, and I've contributed by refactoring core systems, especially improving the underlying UI code and structure.",
+      "Knockout was one of the most unique projects I have worked on. The game features unusual mechanics that were completely new to me, making the development process both challenging and rewarding. During my time on the project, I focused heavily on UI/UX programming, refactored legacy systems, and improved the overall code structure. Today, the game has surpassed <b>1 BILLION visits</b>.",
   },
   {
     id: "ETFB",
@@ -40,7 +50,7 @@ export const games = [
     description:
       "Fisch was the first game I had the opportunity to work on that wasn't created by me. It was also my first experience being part of a large and professional team. I learned a lot during my time developing there and gained valuable experience. I had the pleasure of contributing directly to major events such as <b><i>Roblox Mega Hunt 2025</i></b> and <b><i>Jurassic World Rebirth</i></b>. Today, Fisch has over <b>3 BILLION visits</b> and more than <b>20,000 concurrent players</b> every day.",
   },
-    {
+  {
     id: "UBG",
     universeId: 8478387499,
     contribuition: true,
