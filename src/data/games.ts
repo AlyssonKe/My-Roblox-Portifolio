@@ -1,14 +1,25 @@
 // src/data/games.ts
 export const games = [
   {
+    id: "GD",
+    universeId: 10173311467,
+    contribuition: true,
+    current: true,
+    image: "/images/game-thumbnails/GD.png",
+    link: "https://www.roblox.com/games/137228775845999/Ghost-Driver",
+    title: "Ghost Driver",
+    description:
+      "Ghost Driver is the current project I'm working on. It's an underground traffic-cutting racing game where players redline their engines and swerve through heavy highway traffic at insane speeds. Working on a vehicle-focused game is a new challenge for me, and it's been great to help build the systems behind such a fast-paced, adrenaline-driven experience. The game has already surpassed <b>75 MILLION visits</b>.",
+  },
+  {
     id: "MAN",
     universeId: 10199301628,
     contribuition: true,
-    image: "/images/game-thumbnails/MAK.png",
+    image: "/images/game-thumbnails/MAN.png",
     link: "https://www.roblox.com/games/128784467030899/Merge-a-Nuke",
     title: "Merge a Nuke!",
     description:
-      "Merge a Nuke! is the current project I'm working on. In the game, players merge nukes together to create stronger versions, attack other players' bases, and continuously grow their power through progression. Working on this project has allowed me to contribute to core gameplay systems and help shape the overall player experience.",
+      "Merge a Nuke! was one of the most exciting projects I've worked on recently. In the game, players merge nukes together to create stronger versions, attack other players' bases, and continuously grow their power through progression. Working on this project allowed me to contribute to core gameplay systems and help shape the overall player experience.",
   },
   {
     id: "Knockout",
@@ -59,6 +70,24 @@ export const games = [
     title: "untitled boss game",
     description:
       "Developing Untitled Boss Game was a completely different experience for me. I had a very short timeframe of <b>just two weeks</b>, which made the process a huge challenge. The game revolves around defeating bosses to earn cash, buy items, and grow stronger. During this time, I was fully responsible for designing and programming all the game's systems and mechanics, which gave me valuable and intense learning experience.",
+  },
+  {
+    id: "DGSFB",
+    universeId: 10725449577,
+    image: "/images/game-thumbnails/DGSFB.png",
+    link: "https://www.roblox.com/games/70388533300032/Dont-Get-Spiked-For-Brainrots",
+    title: "Don't Get Spiked For Brainrots",
+    description:
+      "Don't Get Spiked For Brainrots is my most recent game. Players run between giant spiked walls to collect brainrots and bring them back to their base before getting crushed, always deciding whether to play it safe or risk grabbing just one more. Along the way, they earn money, discover brainrots of different rarities, buy upgrades and gear, and try their luck on the Spin Wheel.",
+  },
+  {
+    id: "MURDER",
+    universeId: 9405497445,
+    image: "/images/game-thumbnails/MURDER.png",
+    link: "https://www.roblox.com/games/90124956779270/Murder",
+    title: "Murder+",
+    description:
+      "Murder+ is my take on the classic murder mystery genre. Every round, players are assigned a role: the Murderer must eliminate everyone before time runs out, the Sheriff must protect the Innocents, and the Innocents can hide, survive, or collect 10 pieces of scrap around the map to craft a weapon and fight back. Players also earn coins, unlock unique skins, craft cosmetics, and customize their loadout.",
   },
   {
     id: "TT",

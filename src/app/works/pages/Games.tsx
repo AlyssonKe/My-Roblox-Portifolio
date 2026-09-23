@@ -60,14 +60,14 @@ export default function Games() {
               <p className="text-secondary w-full text-base my-4">
                 I'm currently working on{" "}
                 <a
-                  href="https://www.roblox.com/games/128784467030899/Merge-a-Nuke"
+                  href="https://www.roblox.com/games/137228775845999/Ghost-Driver"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-link"
                 >
-                  Merge a Nuke!
+                  Ghost Driver
                 </a>
-                , my current role and one of the most exciting projects I've worked on recently. The game revolves around merging nukes to create stronger versions, attacking other players' bases, and progressing through increasingly powerful upgrades. It's been a great opportunity to contribute to gameplay systems while helping shape the overall player experience.
+                , a high-speed traffic-cutting racing game with over 75 million visits, where I work on vehicle-focused gameplay systems.
                 <br />
                 I've also contributed to several other projects throughout my journey, listed below.
               </p>

@@ -32,3 +32,33 @@
 .text-link:hover {
   text-decoration: underline;
 }
+/* Home carousel: the text below the slides fades in when the game changes */
+@keyframes carousel-fade {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.carousel-fade {
+  animation: carousel-fade 0.5s ease-out;
+}
+
+/* Timer bar: fills over the autoplay duration, and the carousel advances when it ends */
+@keyframes carousel-progress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.carousel-progress {
+  width: 0%;
+  animation-name: carousel-progress;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* No autoplay or slide motion for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-fade,
+  .carousel-progress {
+    animation: none;
+  }
+}

@@ -1,8 +1,10 @@
 "use client";
 
 import Link from 'next/link';
-import { useEffect, useState } from "react";
 import { useVisits } from "@/context/VisitsContext";
+
+import FeaturedCarousel from '../components/home/FeaturedCarousel'
+import Skills from '../components/home/Skills'
 
 export default function Home() {
   const { visits } = useVisits();
@@ -42,37 +44,9 @@ export default function Home() {
         <div className=' block w-full h-full bottom-0 -z-1 bg-duelan-main bg-contain bg-no-repeat bg-right-bottom sm:absolute right-0 md:block lg:h-[90%]'/>
       </div>
 
-      <div className="relative h-fit bg-primary-gray px-6 -z-10 sm:px-12 md:px-20 xl:px-40">
-        <div className='py-24 text-center sm:text-left sm:py-36 '>
-          <h1 className="text-secondary uppercase text-6xl font-bold">My Skills</h1>
-          <p className="text-secondary w-full text-base my-4 sm:w-3/5">
-            With my years of experience in Roblox Studio, I have learned a lot, making me a versatile game developer. Although programming is the area I enjoy the most and have the most expertise in, I also know how to do a bit of everything in Roblox Studio. Below are my main skills:
-          </p>
+      <FeaturedCarousel />
 
-          <div className='flex grow flex-col items-center justify-between mt-6 space-y-12 sm:flex-row sm:space-y-0'>
-            <div className='w-full flex flex-col items-center sm:w-1/6'>
-              <div className='w-24 h-24 bg-script-icon bg-cover'></div>
-              <h3 className='w-full h-12 text-center text-base font-semibold'>EXPERIENCED<br/>Programmer</h3>
-            </div>
-            <div className='w-full flex flex-col items-center sm:w-1/6'>
-              <div className='w-24 h-24 bg-hammer-icon bg-cover'></div>
-              <h3 className='w-full h-12 text-center text-base font-semibold'>Intermediate<br/>Builder</h3>
-            </div>
-            <div className='w-full flex flex-col items-center sm:w-1/6'>
-              <div className='w-24 h-24 bg-environment-icon bg-cover'></div>
-              <h3 className='w-full h-12 text-center text-base font-semibold'>Intermediate<br/>Environment Creation</h3>
-            </div>
-            <div className='w-full flex flex-col items-center sm:w-1/6'>
-              <div className='w-24 h-24 bg-gui-icon bg-cover'></div>
-              <h3 className='w-full h-12 text-center text-base font-semibold'>Basic<br/>Game UI/UX</h3>
-            </div>
-            <div className='w-full flex flex-col items-center sm:w-1/6'>
-              <div className='w-16 h-16 bg-texturizer-icon bg-cover md:w-24 md:h-24'></div>
-              <h3 className='w-full h-12 text-center text-base font-semibold'>Basic<br/>Texturizer</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Skills />
     </main>
   );
 }
